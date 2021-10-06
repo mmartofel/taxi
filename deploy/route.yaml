@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: taxi
+  name: taxi-route
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: taxi
+    weight: 100
+

@@ -1,6 +1,8 @@
 resources:
+- mmartofe-wally-secret.yaml
 - deployment.yaml
 - service.yaml
+- route.yaml
 configMapGenerator:
 - name: www-files
   files:

@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: taxi
-        image: quay.io/kmcdermo/taxi:master
+        image: quay.io/mmartofe/taxi:latest
         imagePullPolicy: Always
         volumeMounts:
         - name: web-files
@@ -32,4 +32,4 @@ spec:
         configMap:
           name: www-files
       imagePullSecrets:
-        - name: kmcdermo-pull-secret
+        - name: mmartofe-wally-pull-secret
